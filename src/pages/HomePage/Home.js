@@ -23,7 +23,7 @@ function Home() {
       <InfoSection {...homeObjSix} />
       <InfoSection {...homeObjSeven} />
       <InfoSection {...homeObjEight} />
-      <Service/>
+      <Service />
     </>
   );
 }

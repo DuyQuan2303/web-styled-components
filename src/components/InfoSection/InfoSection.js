@@ -8,7 +8,7 @@ import {
   Heading,
   Subtitle,
   ImgWrapper,
-  Img
+  Img,
 } from "./InfoSection.element";
 import { Link } from "react-router-dom";
 import { Container, Button } from "../../globalStyles";

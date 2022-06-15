@@ -140,3 +140,33 @@ export const homeObjEight = {
   alt: "Vault",
   start: "true",
 };
+
+export const serObjOne = {
+  toptit: "Mobile App Development",
+  img: require("../../images/sv1-min.png"),
+  desc: "Space Fintech builds powerful",
+};
+
+export const serObjTwo = {
+  toptit: "Custom Product",
+  img: require("../../images/sv2-min.png"),
+  desc: "Software is ingrained in our existence.",
+};
+
+export const serObjThree = {
+  toptit: "Blockchain Development",
+  img: require("../../images/sv3-min.png"),
+  desc: "If you’re looking for enterprise blockchain",
+};
+
+export const serObjFour = {
+  toptit: "Security Compliance",
+  img: require("../../images/sv4-min.png"),
+  desc: "Did you know that over 60% of companies",
+};
+
+export const serObjFive = {
+  toptit: "Search Engine Optimization",
+  img: require("../../images/sv5-min.png"),
+  desc: "Too many businesses overlook the value",
+};
