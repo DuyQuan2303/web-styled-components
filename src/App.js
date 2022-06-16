@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <GlobalStyle/>
-      <Navbar />
+    
       <Routes>
-        <Route  path="/"  element={<Home/>} />
+        <Route path="/" element={<Home/>}></Route>
       </Routes>
       <ScrollToTop/>
     </Router>
