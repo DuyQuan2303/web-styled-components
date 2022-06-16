@@ -205,3 +205,13 @@ export const seoChart = {
   color: "rgb(102, 201, 4)",
   chartname: "SEO",
 };
+
+export const smallSecBg = {
+  url: require('../../images/parallax-bg-min.jpeg'),
+  smallTitle: "SpaceFinTech Technology Solutions 4.0",
+  bigTitle: "Grow Your Business With Us",
+  primary: true,
+  opacity: 1,
+  buttonLabel: 'Learn More'
+  
+}

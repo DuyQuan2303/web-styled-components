@@ -26,25 +26,48 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  outline: none;
-  border: none;
+     border-radius: 50px;
+    display: inline-block;
+    line-height: 25px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+    color: rgb(34, 45, 56);
+    border: 1px solid;
+    z-index: 999;
+    padding: 9px 34px !important;
   cursor: pointer;
   opacity: ${({opacity}) => (opacity ? '1' : '0')};
   &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    z-index: 10;
   }
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
+  &::before{
+    content: "";
+    position: absolute;
+    background: rgb(102, 201, 4);
+    z-index: -1;
+    inset: 0px;
+    border-radius: 38px;
+    transform: scaleX(0);
+    transform-origin: 50% center;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
   }
+  &:hover::before{
+    transform: scaleX(1);
+    border-color: rgb(102, 201, 4);
+  }
+
+  /* @media screen and (max-width: 960px) {
+    width: 100%;
+  } */
 `;
 
 export const SButton = styled.div`

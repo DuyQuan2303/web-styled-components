@@ -9,10 +9,12 @@ import {
   homeObjSeven,
   homeObjEight,
   sQ,
+  smallSecBg,
 } from "./Data";
 import { InfoSection } from "../../components";
 import Service from "../../components/Service/Service";
 import SQ from "../../components/SkillQualities/SQ";
+import SmallSection from "../../components/SmallSection/SmallSection";
 
 function Home() {
   return (
@@ -27,6 +29,7 @@ function Home() {
       <InfoSection {...homeObjEight} />
       <Service />
       <SQ {...sQ} />
+      <SmallSection {...smallSecBg} />
     </>
   );
 }
