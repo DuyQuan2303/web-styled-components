@@ -9,10 +9,10 @@ function App() {
     <Router>
       <GlobalStyle/>
       <Navbar />
-      <ScrollToTop/>
       <Routes>
         <Route  path="/"  element={<Home/>} />
       </Routes>
+      <ScrollToTop/>
     </Router>
   );
 }
