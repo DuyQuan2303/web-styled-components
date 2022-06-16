@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/web-styled-components/static/js/main.ec4085fe.js",
+    "static/js/787.674f56e7.chunk.js": "/web-styled-components/static/js/787.674f56e7.chunk.js",
+    "static/media/sunn.png": "/web-styled-components/static/media/sunn.96c7b39268e97094326e.png",
+    "static/media/business.jpeg": "/web-styled-components/static/media/business.01db2202e6d836fb11fe.jpeg",
+    "static/media/digitalwave.png": "/web-styled-components/static/media/digitalwave.45936e506c48406b73c3.png",
+    "static/media/hello.jpeg": "/web-styled-components/static/media/hello.143bc6eba727fdb17293.jpeg",
+    "static/media/skill1-min.png": "/web-styled-components/static/media/skill1-min.cd12f329fb68f9c02be0.png",
+    "static/media/whatwe-removebg-preview.png": "/web-styled-components/static/media/whatwe-removebg-preview.859c4a168930d61ef93b.png",
+    "static/media/engineer.png": "/web-styled-components/static/media/engineer.5215cf7f09015215ca15.png",
+    "static/media/industry2nobg.png": "/web-styled-components/static/media/industry2nobg.c01692fff64b1f4da5c7.png",
+    "static/media/logofintech.png": "/web-styled-components/static/media/logofintech.d0aa7b893877a552041a.png",
+    "static/media/sv5-min.png": "/web-styled-components/static/media/sv5-min.28e0d6b647eb44ca7e87.png",
+    "static/media/sv2-min.png": "/web-styled-components/static/media/sv2-min.b7bd3fef60bab559c0bc.png",
+    "static/media/sv4-min.png": "/web-styled-components/static/media/sv4-min.4dc34634295cdb64b550.png",
+    "static/media/sv1-min.png": "/web-styled-components/static/media/sv1-min.ccd524eae2b926e53d59.png",
+    "static/media/sv3-min.png": "/web-styled-components/static/media/sv3-min.f931b30e8a61bf5ffa9e.png",
+    "index.html": "/web-styled-components/index.html",
+    "main.ec4085fe.js.map": "/web-styled-components/static/js/main.ec4085fe.js.map",
+    "787.674f56e7.chunk.js.map": "/web-styled-components/static/js/787.674f56e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ec4085fe.js"
+  ]
+}
