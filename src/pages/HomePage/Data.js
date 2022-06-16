@@ -170,3 +170,38 @@ export const serObjFive = {
   img: require("../../images/sv5-min.png"),
   desc: "Too many businesses overlook the value",
 };
+
+export const sQ = {
+  img: require("../../images/skill1-min.png"),
+  alt: "anh",
+};
+
+export const designChart = {
+  percentage: "60%",
+  color: "rgb(102, 201, 4)",
+  chartname: "Design",
+};
+
+export const marketingChart = {
+  percentage: "70%",
+  color: "rgb(36, 193, 221)",
+  chartname: "Marketing",
+};
+
+export const developerChart = {
+  percentage: "80%",
+  color: "rgb(102, 201, 4)",
+  chartname: "Developer",
+};
+
+export const blockchainChart = {
+  percentage: "90%",
+  color: "rgb(36, 193, 221)",
+  chartname: "Blockchain",
+};
+
+export const seoChart = {
+  percentage: "100%",
+  color: "rgb(102, 201, 4)",
+  chartname: "SEO",
+};

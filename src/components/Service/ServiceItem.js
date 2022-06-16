@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  ServiceBox,
-  ServiceTitle,
   ServiceItem,
   ItemTitle,
   ItemDesc,
@@ -15,11 +13,11 @@ const ServiceProd = ({ toptit, desc, img }) => {
     <>
       <ServiceItem>
         <ServiceLogo>
-        <ServiceImg src={img} />
+          <ServiceImg src={img} />
         </ServiceLogo>
         <ItemTitle>{toptit}</ItemTitle>
         <ItemFooter>
-        <ItemDesc>{desc}</ItemDesc>
+          <ItemDesc>{desc}</ItemDesc>
         </ItemFooter>
       </ServiceItem>
     </>

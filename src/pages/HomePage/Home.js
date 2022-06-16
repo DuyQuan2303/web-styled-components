@@ -8,9 +8,11 @@ import {
   homeObjSix,
   homeObjSeven,
   homeObjEight,
+  sQ,
 } from "./Data";
 import { InfoSection } from "../../components";
 import Service from "../../components/Service/Service";
+import SQ from "../../components/SkillQualities/SQ";
 
 function Home() {
   return (
@@ -24,6 +26,7 @@ function Home() {
       <InfoSection {...homeObjSeven} />
       <InfoSection {...homeObjEight} />
       <Service />
+      <SQ {...sQ} />
     </>
   );
 }
