@@ -207,11 +207,24 @@ export const seoChart = {
 };
 
 export const smallSecBg = {
-  url: require('../../images/parallax-bg-min.jpeg'),
+  url: require("../../images/parallax-bg-min.jpeg"),
   smallTitle: "SpaceFinTech Technology Solutions 4.0",
   bigTitle: "Grow Your Business With Us",
   primary: true,
   opacity: 1,
-  buttonLabel: 'Learn More'
-  
-}
+  buttonLabel: "Learn More",
+};
+
+export const creativeTech = {
+  src: require("../../images/techvideo-min.jpeg"),
+};
+
+export const smallSecBg2 = {
+  url: require("../../images/type.jpeg"),
+  smallTitle: "",
+  bigTitle:
+    "Maecenas nec odio et ante tincidunt tempus Donecbero vitae sapien ut libero nenatis.",
+  primary: true,
+  opacity: 0,
+  buttonLabel: "Learn More",
+};

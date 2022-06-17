@@ -26,28 +26,28 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-     border-radius: 50px;
-    display: inline-block;
-    line-height: 25px;
-    font-weight: 600;
-    position: relative;
-    text-align: center;
-    transition: all 0.5s ease 0s;
-    font-size: 14px;
-    background: rgb(255, 255, 255);
-    color: rgb(34, 45, 56);
-    border: 1px solid;
-    z-index: 999;
-    padding: 9px 34px !important;
+  border-radius: 50px;
+  display: inline-block;
+  line-height: 25px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  font-size: 14px;
+  background: rgb(255, 255, 255);
+  color: rgb(34, 45, 56);
+  border: 1px solid;
+  z-index: 1;
+  padding: 9px 34px !important;
   cursor: pointer;
-  opacity: ${({opacity}) => (opacity ? '1' : '0')};
+  opacity: ${({ opacity }) => (opacity ? "1" : "0")};
   &:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    z-index: 10;
+    z-index: 1;
   }
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     background: rgb(102, 201, 4);
@@ -60,7 +60,7 @@ export const Button = styled.button`
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
-  &:hover::before{
+  &:hover::before {
     transform: scaleX(1);
     border-color: rgb(102, 201, 4);
   }
@@ -71,15 +71,15 @@ export const Button = styled.button`
 `;
 
 export const SButton = styled.div`
-   position: fixed; 
-   width: 100%;
-   left: 90%;
-   bottom: 40px;
-   height: 20px;
-   font-size: 3rem;
-   z-index: 1;
-   cursor: pointer;
-   color: #0056b3;
-`
+  position: fixed;
+  width: 100%;
+  left: 90%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: #0056b3;
+`;
 
 export default GlobalStyle;

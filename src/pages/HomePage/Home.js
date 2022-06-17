@@ -10,6 +10,8 @@ import {
   homeObjEight,
   sQ,
   smallSecBg,
+  creativeTech,
+  smallSecBg2,
 } from "./Data";
 import { InfoSection, Navbar } from "../../components";
 import Service from "../../components/Service/Service";
@@ -20,7 +22,7 @@ import CreativeSection from "../../components/CreativeSection/CreativeSection";
 function Home() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
@@ -32,7 +34,8 @@ function Home() {
       <Service />
       <SQ {...sQ} />
       <SmallSection {...smallSecBg} />
-      <CreativeSection/>
+      <CreativeSection {...creativeTech} />
+      <SmallSection {...smallSecBg2} />
     </>
   );
 }
