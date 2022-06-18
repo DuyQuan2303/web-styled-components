@@ -31,6 +31,7 @@ export const ServiceTitle = styled.h3`
   margin-bottom: 35px;
   font-weight: 600;
   font-size: 35px;
+  text-align: center;
 `;
 
 export const ServiceItem = styled.div`
@@ -70,6 +71,7 @@ export const ServiceImg = styled.img`
 
 export const ItemTitle = styled.h2`
   font-size: 24px;
+  text-align: center;
 `;
 
 export const ItemFooter = styled.div`
@@ -82,4 +84,5 @@ export const ItemFooter = styled.div`
 `;
 export const ItemDesc = styled.p`
   font-size: 16px;
+  text-align: center;
 `;

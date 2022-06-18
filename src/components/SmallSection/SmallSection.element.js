@@ -11,6 +11,10 @@ export const SmallSec = styled.div`
   left: 0;
   overflow: hidden;
   z-index: 1;
+  position: absolute;
+  @media screen and (max-width: 768px){
+  background-size: auto;
+}
 `;
 
 export const SmallSecBg = styled.div`
@@ -21,10 +25,9 @@ export const SmallSecBg = styled.div`
   height: auto;
   overflow: hidden;
   min-height: 420px;
-  @media screen and (max-width: 768px) {
-    min-height: 350px;
-    background-size: auto;
-  }
+  position: relative;
+
+
 `;
 
 export const TextWrapper = styled.div`

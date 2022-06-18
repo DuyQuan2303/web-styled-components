@@ -31,8 +31,11 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `;
 
-export const NavIcon = styled(GiSolarSystem)`
+export const NavIcon = styled.img`
   margin-right: 0.5rem;
+  width: 110px;
+  height: 50px
+  ;
 `;
 
 export const MobileIcon = styled.div`

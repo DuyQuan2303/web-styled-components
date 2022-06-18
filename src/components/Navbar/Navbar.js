@@ -12,7 +12,7 @@ import {
   NavLinks,
 } from "./Navbar.element";
 
-const Navbar = () => {
+const Navbar = ({img}) => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -23,8 +23,7 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
-              Spacefintech
+              <NavIcon src={img} />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

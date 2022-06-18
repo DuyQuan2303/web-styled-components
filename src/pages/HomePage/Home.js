@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  homeObjOne,
   homeObjTwo,
   homeObjThree,
   homeObjFour,
@@ -12,18 +11,25 @@ import {
   smallSecBg,
   creativeTech,
   smallSecBg2,
+  homeObjOne,
+  projectImg,
+  homeObjNine,
+  homeObjTen,
+  webLogo,
 } from "./Data";
 import { InfoSection, Navbar } from "../../components";
 import Service from "../../components/Service/Service";
 import SQ from "../../components/SkillQualities/SQ";
 import SmallSection from "../../components/SmallSection/SmallSection";
 import CreativeSection from "../../components/CreativeSection/CreativeSection";
-
+import Project from "../../ProjectSession/Project";
+import Slider from "../../components/Slider/Slider";
+import Images from "../../components/Slider/images";
 function Home() {
   return (
     <>
-      <Navbar />
-      <InfoSection {...homeObjOne} />
+      <Navbar {...webLogo}/>
+      <Slider images={Images} {...homeObjOne}/>
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjFour} />
@@ -35,7 +41,11 @@ function Home() {
       <SQ {...sQ} />
       <SmallSection {...smallSecBg} />
       <CreativeSection {...creativeTech} />
+      <Project {...projectImg}/>
       <SmallSection {...smallSecBg2} />
+      <InfoSection {...homeObjNine} />
+      <InfoSection {...homeObjTen} />
+
     </>
   );
 }

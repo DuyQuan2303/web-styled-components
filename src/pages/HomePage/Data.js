@@ -1,19 +1,9 @@
-export const homeObjOne = {
-  primary: true,
-  lightBg: false,
-  lightTopLine: true,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "Financial software development services",
-  headLine: "Bussiness Agency",
-  description:
-    "Digital Solution for Financial Services Industry Digital transformation in financial services",
-  buttonLabel: "Learn More",
-  imgStart: "",
+export const webLogo = {
   img: require("../../images/logofintech.png"),
-  alt: "Credit Card",
-  start: "",
-  opacity: true,
+};
+
+export const homeObjOne = {
+  opacity: 1,
 };
 export const homeObjTwo = {
   primary: true,
@@ -24,8 +14,8 @@ export const homeObjTwo = {
   topLine: "",
   headLine: "Industry Solutions",
   description:
-    "Bring your ideas for mobile applications, web services or more complex solutions to life with us. Work with a team... \
-    Find out how SpaceFintech’s products and solutions are helping enterprises benefit from blockchain technology",
+    "Bring your ideas for mobile applications, web services or more complex solutions to life with us. Work with a team... \n" +
+    "Find out how SpaceFintech’s products and solutions are helping enterprises benefit from blockchain technology",
   buttonLabel: "Learn More",
   imgStart: "",
   img: require("../../images/industry2nobg.png"),
@@ -86,6 +76,7 @@ export const homeObjFive = {
   img: require("../../images/digitalwave.png"),
   alt: "Vault",
   start: "true",
+  opacity: false,
 };
 export const homeObjSix = {
   primary: true,
@@ -102,6 +93,7 @@ export const homeObjSix = {
   img: require("../../images/engineer.png"),
   alt: "Vault",
   start: "true",
+  opacity: false,
 };
 export const homeObjSeven = {
   primary: true,
@@ -118,6 +110,7 @@ export const homeObjSeven = {
   img: require("../../images/sunn.png"),
   alt: "Vault",
   start: "true",
+  opacity: false,
 };
 export const homeObjEight = {
   primary: true,
@@ -128,17 +121,50 @@ export const homeObjEight = {
   topLine: "",
   headLine: "Programming Languages",
   description:
-    "Once, only a few people were considered computer programmers with cutting-edge coding skills. Now, many IT jobs require a solid grasp of the top programming languages — yes, more than one.\
-    \
-  If you’re trying to advance in your career or change careers completely and need to master a programming language, you might wonder which one to learn. After all, it will take time and money to learn the language, so you want to make the right choice.\
-  \
-  Several considerations come into play when making your decision, like the difficulty level you’re willing to learn, the knowledge you already possess that align with your existing coding skills, or your reasons for learning a top programming language.\
+    "Once, only a few people were considered computer programmers with cutting-edge coding skills. Now, many IT jobs require a solid grasp of the top programming languages — yes, more than one.\n" +
+    "If you’re trying to advance in your career or change careers completely and need to master a programming language, you might wonder which one to learn. After all, it will take time and money to learn the language, so you want to make the right choice.\n" +
+    "Several considerations come into play when making your decision, like the difficulty level you’re willing to learn, the knowledge you already possess that align with your existing coding skills, or your reasons for learning a top programming language.\
   Whether you want to develop a mobile application, get certification for programming knowledge, or learn new skills, you need to learn the right programming language.",
   buttonLabel: "Read More",
   imgStart: "start",
   img: require("../../images/hello.jpeg"),
   alt: "Vault",
   start: "true",
+  opacity: false,
+};
+export const homeObjNine = {
+  primary: true,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "",
+  headLine: "Development Blog",
+  description:
+    "As you learn the fundamentals of web development and look to enhance your knowledge, it’s important to scour the internet to see what other people are doing and saying. While it’s great to stay up-to-date on trends through magazines and books, web development blogs provide you with an abundance of fresh, free content. Blogs have become increasingly more popular over the years and even though sports and fashion blogs led the charge at first, it’s now very likely that every topic out there has at least one blog dedicated to it.",
+  buttonLabel: "Read Full Story",
+  imgStart: false,
+  img: require("../../images/blog-1-min.jpeg"),
+  alt: "Vault",
+  start: false,
+  opacity: true,
+};
+export const homeObjTen = {
+  primary: true,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "",
+  headLine: "Website Design",
+  description:
+    "Design agencies create innovative methods of communication for clients and their brands that create value for their businesses. The objectives include creating a competitive advantage for the client in today's hyper-competitive business environment that sets them apart. Designers plan and implement value-creating strategies with their clients.",
+  buttonLabel: "Read Full Story",
+  imgStart: true,
+  img: require("../../images/blog2-min.jpeg"),
+  alt: "Vault",
+  start: true,
+  opacity: true,
 };
 
 export const serObjOne = {
@@ -227,4 +253,15 @@ export const smallSecBg2 = {
   primary: true,
   opacity: 0,
   buttonLabel: "Learn More",
+};
+
+export const projectImg = {
+  img1: require("../../images/work-1-min.jpeg"),
+  img2: require("../../images/work-8-min.jpeg"),
+  img3: require("../../images/work-3-min.jpeg"),
+  img4: require("../../images/work-4-min.jpeg"),
+  img5: require("../../images/work-5-min.jpeg"),
+  img6: require("../../images/work-12-min.jpeg"),
+  img7: require("../../images/work-7-min.jpeg"),
+  img8: require("../../images/work-11-min.jpeg"),
 };
