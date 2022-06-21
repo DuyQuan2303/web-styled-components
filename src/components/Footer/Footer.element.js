@@ -48,7 +48,10 @@ export const SocialList = styled.ul`
 
 export const SocialFilter = styled.li`
   list-style: none;
-  padding: 0 15px;
+  margin: 0 1rem;
+  @media screen and (max-width: 768px){
+    width: 20%;
+  }
 `;
 export const SocialItems = styled.a`
   font-weight: bold;

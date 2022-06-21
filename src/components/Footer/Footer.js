@@ -10,7 +10,7 @@ const Footer = () => {
         <Container>
           <FooterRow>
             <FooterColumn>
-              <p style={{ maxWidth: "180px" }}>
+              <p style={{ maxWidth: "180px",marginBottom:'1rem' }}>
                 <img
                   src="https://spacefintech.com/images/logofintech.png"
                   alt=""
