@@ -6,6 +6,7 @@ export const SliderSec = styled.div `
     background-size: cover;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     
   `
   
@@ -14,6 +15,10 @@ export const SliderSec = styled.div `
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    @media screen and (max-width: 768px){
+      width: 100vw;
+      justify-content: center;
+    }
     @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -57,7 +62,6 @@ export const SliderButton = styled.button`
     
     &:hover{
       transform: scale(0.95);
-
     }
 
     `

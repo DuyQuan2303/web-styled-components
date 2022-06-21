@@ -68,7 +68,6 @@ const Footer = () => {
             </FooterColumn>
           </FooterRow>
         </Container>
-        
       </FooterSec>
     <Social/>
     </>

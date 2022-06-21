@@ -80,6 +80,10 @@ export const SButton = styled.div`
   z-index: 1;
   cursor: pointer;
   color: #0056b3;
+  @media screen and (max-width: 768px) {
+    left: 80%;
+    bottom: 40px;
+  }
 `;
 
 export default GlobalStyle;

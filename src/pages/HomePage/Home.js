@@ -26,6 +26,7 @@ import Project from "../../components/ProjectSession/Project";
 import Slider from "../../components/Slider/Slider";
 import Images from "../../components/Slider/images";
 import Footer from "../../components/Footer/Footer";
+import Product from "../../components/Product/Product";
 function Home() {
   return (
     <>
@@ -44,6 +45,7 @@ function Home() {
       <CreativeSection {...creativeTech} />
       <Project {...projectImg} />
       <SmallSection {...smallSecBg2} />
+      <Product/>
       <InfoSection {...homeObjNine} />
       <InfoSection {...homeObjTen} />
       <Footer />
