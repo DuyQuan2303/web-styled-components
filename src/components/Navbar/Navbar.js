@@ -12,15 +12,28 @@ import {
   NavLinks,
 } from "./Navbar.element";
 
-const Navbar = ({img}) => {
+import { MyContext } from "../Slider/hooks/bgColor";
+import { useContext } from "react";
+const Navbar = ({ img }) => {
   const [click, setClick] = useState(false);
+  const { bgColorGlobal, setBgColorGlobal } = useContext(MyContext);
 
+  console.log(bgColorGlobal, setBgColorGlobal);
   const handleClick = () => setClick(!click);
 
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setBgColorGlobal(true);
+    } else {
+      setBgColorGlobal(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav>
+        <Nav bg={bgColorGlobal ? "black" : "transparent"}>
           <NavbarContainer>
             <NavLogo to="/">
               <NavIcon src={img} />

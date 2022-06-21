@@ -1,3 +1,7 @@
+export const navColor = {
+  bgColor: true
+}
+
 export const webLogo = {
   img: require("../../images/logofintech.png"),
 };

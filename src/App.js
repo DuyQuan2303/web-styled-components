@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage/Home";
 import GlobalStyle from "./globalStyles";
 import ScrollButton from "./components/ScrollToTop";
+import BgColor from "./components/Slider/hooks/bgColor";
 function App() {
   return (
+    <BgColor>
     <Router>
       <GlobalStyle />
       <Routes>
@@ -12,6 +14,7 @@ function App() {
       </Routes>
       <ScrollButton/>
     </Router>
+    </BgColor>
   );
 }
 

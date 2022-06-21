@@ -22,14 +22,15 @@ import Service from "../../components/Service/Service";
 import SQ from "../../components/SkillQualities/SQ";
 import SmallSection from "../../components/SmallSection/SmallSection";
 import CreativeSection from "../../components/CreativeSection/CreativeSection";
-import Project from "../../ProjectSession/Project";
+import Project from "../../components/ProjectSession/Project";
 import Slider from "../../components/Slider/Slider";
 import Images from "../../components/Slider/images";
+import Footer from "../../components/Footer/Footer";
 function Home() {
   return (
     <>
-      <Navbar {...webLogo}/>
-      <Slider images={Images} {...homeObjOne}/>
+      <Navbar {...webLogo} />
+      <Slider images={Images} {...homeObjOne} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjFour} />
@@ -41,11 +42,11 @@ function Home() {
       <SQ {...sQ} />
       <SmallSection {...smallSecBg} />
       <CreativeSection {...creativeTech} />
-      <Project {...projectImg}/>
+      <Project {...projectImg} />
       <SmallSection {...smallSecBg2} />
       <InfoSection {...homeObjNine} />
       <InfoSection {...homeObjTen} />
-
+      <Footer />
     </>
   );
 }
