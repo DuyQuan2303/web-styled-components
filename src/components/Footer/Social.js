@@ -21,42 +21,42 @@ const Social = () => {
         <Container>
           <SocialList>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInDown">
                 <i>
                   <FaFacebookF />
                 </i>
               </SocialItems>
             </SocialFilter>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInUp">
                 <i>
                   <FaTwitter />
                 </i>
               </SocialItems>
             </SocialFilter>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInDown">
                 <i>
                   <FaGooglePlusG />
                 </i>
               </SocialItems>
             </SocialFilter>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInUp">
                 <i>
                   <FaInvision />
                 </i>
               </SocialItems>
             </SocialFilter>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInDown">
                 <i>
                   <FaInstagram />
                 </i>
               </SocialItems>
             </SocialFilter>
             <SocialFilter>
-              <SocialItems>
+              <SocialItems className="wow fadeInUp">
                 <i>
                   <FaEnvelope />
                 </i>

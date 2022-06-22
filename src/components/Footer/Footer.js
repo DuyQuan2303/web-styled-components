@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../../globalStyles";
-import { FooterColumn, FooterRow, FooterSec, SocialSec } from "./Footer.element";
+import { FooterColumn, FooterRow, FooterSec,  } from "./Footer.element";
 import { MapContainer } from "./Map";
 import Social from "./Social";
 const Footer = () => {

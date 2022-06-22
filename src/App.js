@@ -8,7 +8,7 @@ import ScrollButton from "./components/ScrollToTop";
 import BgColor from "./components/Slider/hooks/bgColor";
 function App() {
   return (
-    <RootWrapper>
+    <>
       <BgColor>
         <Router>
           <GlobalStyle />
@@ -18,7 +18,7 @@ function App() {
           <ScrollButton />
         </Router>
       </BgColor>
-    </RootWrapper>
+    </>
   );
 }
 
@@ -27,4 +27,5 @@ export default App;
 const RootWrapper = styled.div`
   width: 100vw;
   overflow: hidden;
+  overflow-x: hidden;
 `;

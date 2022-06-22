@@ -3,10 +3,14 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     *{
+      position: relative;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        .mainContainer{
+          overflow-x: hidden;
+        }
     }
 `;
 
@@ -73,8 +77,8 @@ export const Button = styled.button`
 export const SButton = styled.div`
   position: fixed;
   width: 100%;
-  left: 90%;
-  bottom: 40px;
+  left: 95%;
+  bottom: 50px;
   height: 20px;
   font-size: 3rem;
   z-index: 1;

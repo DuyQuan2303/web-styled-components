@@ -22,7 +22,7 @@ const Project = ({ img1, img2, img3, img4, img5, img6, img7, img8 }) => {
         </ProjectHeading>
         <ProjectHolder>
           <ProjectFilter>
-            <ProjectList>All</ProjectList>
+            <ProjectList className="item item-active">All</ProjectList>
             <ProjectList>Graphic Design</ProjectList>
             <ProjectList>Web Design</ProjectList>
             <ProjectList>SEO</ProjectList>

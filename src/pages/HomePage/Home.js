@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import {
   homeObjTwo,
   homeObjThree,
@@ -16,6 +17,7 @@ import {
   homeObjNine,
   homeObjTen,
   webLogo,
+  business,
 } from "./Data";
 import { InfoSection, Navbar } from "../../components";
 import Service from "../../components/Service/Service";
@@ -27,30 +29,47 @@ import Slider from "../../components/Slider/Slider";
 import Images from "../../components/Slider/images";
 import Footer from "../../components/Footer/Footer";
 import Product from "../../components/Product/Product";
-function Home() {
-  return (
-    <>
-      <Navbar {...webLogo} />
-      <Slider images={Images} {...homeObjOne} />
-      <InfoSection {...homeObjThree} />
-      <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjFour} />
-      <InfoSection {...homeObjFive} />
-      <InfoSection {...homeObjSix} />
-      <InfoSection {...homeObjSeven} />
-      <InfoSection {...homeObjEight} />
-      <Service />
-      <SQ {...sQ} />
-      <SmallSection {...smallSecBg} />
-      <CreativeSection {...creativeTech} />
-      <Project {...projectImg} />
-      <SmallSection {...smallSecBg2} />
-      <Product/>
-      <InfoSection {...homeObjNine} />
-      <InfoSection {...homeObjTen} />
-      <Footer />
-    </>
-  );
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import WOW from "wowjs";
+import IndustrySolution from "../../components/IndustrySolution/IndustrySolution";
+import Bussiness from "../../components/Bussiness/Bussiness";
+class Home extends React.Component {
+  componentDidMount() {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }
+  render() {
+    return (
+      <>
+        <Navbar {...webLogo} />
+        <Slider images={Images} {...homeObjOne} />
+        <InfoSection {...homeObjThree} />
+        <IndustrySolution />
+        <Bussiness {...business}/>
+        <InfoSection {...homeObjFive} />
+        <InfoSection {...homeObjSix} />
+        <InfoSection {...homeObjSeven} />
+        <InfoSection {...homeObjEight} />
+        <Service />
+        <SQ {...sQ} />
+        <SmallSection {...smallSecBg} />
+        <CreativeSection {...creativeTech} />
+        <Project {...projectImg} />
+        <SmallSection {...smallSecBg2} />
+        <Product />
+        <InfoSection {...homeObjNine} />
+        <InfoSection {...homeObjTen} />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Home;
+
+const HomeWrapper = styled.div`
+  width: 100vw;
+  overflow: hidden;
+`;

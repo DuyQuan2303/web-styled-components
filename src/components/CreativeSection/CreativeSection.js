@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../../globalStyles";
 import { FaPlay } from "react-icons/fa";
 import {
   Content,

@@ -33,7 +33,7 @@ const Navbar = ({ img }) => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav bg={bgColorGlobal ? "black" : "transparent"}>
+        <Nav bg={bgColorGlobal ? "#101522" : "transparent"}>
           <NavbarContainer>
             <NavLogo to="/">
               <NavIcon src={img} />

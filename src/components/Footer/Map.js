@@ -1,4 +1,4 @@
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import {  GoogleApiWrapper,  } from "google-maps-react";
 import React, { Component } from "react";
 export class MapContainer extends Component {
   render() {

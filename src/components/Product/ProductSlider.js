@@ -6,6 +6,8 @@ import "swiper/css/free-mode";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
 import img1 from "../../images/Mobile app -01.png";
 import img2 from "../../images/Mobile app -02.png";
 import img3 from "../../images/Mobile app -03.png";
@@ -19,10 +21,15 @@ const ProductSlider = () => {
       <Swiper
         freeMode={true}
         grabCursor={true}
-        modules={[FreeMode]}
+        // modules={[FreeMode]}
         className="mySwiper"
         slidesPerView={3}
         spaceBetween={30}
+        navigation
+        pagination={{clickable:true}}
+        scrollbar={{draggable:true}}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <ProductCard data={{ imgSrc: img1 }} />

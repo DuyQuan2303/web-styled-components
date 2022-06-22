@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../../globalStyles";
-import ProductSlider from "../ProjectSession/ProductSlider";
+import ProductSlider from "./ProductSlider";
 import { ProductHeader, ProductSec, TextWrapper } from "./Product.element";
 
 const Product = () => {

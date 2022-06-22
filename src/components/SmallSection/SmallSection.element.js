@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SmallSec = styled.div`
   color: #fff;
-  padding: 160px 0;
+  padding: 60px 0;
   background: rgba(0, 0, 0, 0.3);
   min-height: 420px;
   width: 100%;
@@ -32,8 +32,7 @@ export const SmallSecBg = styled.div`
 
 export const TextWrapper = styled.div`
   text-align: center;
-  top: 50%;
-  left: 50%;
+  top: 100px;
   z-index: 99;
   color: rgb(255, 255, 255);
   width: 100%;

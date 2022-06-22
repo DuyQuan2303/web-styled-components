@@ -1,31 +1,18 @@
 export const navColor = {
-  bgColor: true
-}
+  bgColor: true,
+};
 
 export const webLogo = {
   img: require("../../images/logofintech.png"),
 };
 
+export const business = {
+  opacity: true,
+  buttonLabel: "Learn More",
+};
+
 export const homeObjOne = {
   opacity: 1,
-};
-export const homeObjTwo = {
-  primary: true,
-  lightBg: false,
-  lightTopLine: true,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "",
-  headLine: "Industry Solutions",
-  description:
-    "Bring your ideas for mobile applications, web services or more complex solutions to life with us. Work with a team... \n" +
-    "Find out how SpaceFintech’s products and solutions are helping enterprises benefit from blockchain technology",
-  buttonLabel: "Learn More",
-  imgStart: "",
-  img: require("../../images/industry2nobg.png"),
-  alt: "Vault",
-  start: "true",
-  opacity: true,
 };
 
 export const homeObjThree = {

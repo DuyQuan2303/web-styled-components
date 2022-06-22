@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServiceSec = styled.div`
   color: #fff;
-  padding: 160px 0;
+  padding: 50px 0;
   background: rgba(0, 0, 0, 0.83);
 
   width: 100%;
@@ -61,8 +61,9 @@ export const ServiceBox = styled.div`
 export const ServiceLogo = styled.div`
   max-width: 65px;
   width: 100%;
+  height: 75px;
   overflow: hidden;
-  margin: 0px auto;
+  margin: 10px auto;
 `;
 export const ServiceImg = styled.img`
   width: 60px;
