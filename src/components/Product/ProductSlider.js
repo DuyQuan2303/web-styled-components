@@ -1,12 +1,17 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
-import "swiper/css";
-import "swiper/css/free-mode";
+// import "swiper/css";
+// import "swiper/css/free-mode";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import img1 from "../../images/Mobile app -01.png";
 import img2 from "../../images/Mobile app -02.png";
@@ -17,19 +22,26 @@ import { ProductCard } from "./Card";
 
 const ProductSlider = () => {
   return (
-    <div className="container py-4 px-4 justify-content-center">
+    <div className="container  justify-content-center">
       <Swiper
-        freeMode={true}
-        grabCursor={true}
-        // modules={[FreeMode]}
-        className="mySwiper"
-        slidesPerView={3}
+        modules={[ Pagination, A11y]}
         spaceBetween={30}
-        navigation
-        pagination={{clickable:true}}
-        scrollbar={{draggable:true}}
-        onSlideChange={() => console.log('slide change')}
+        // navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+       breakpoints={{
+        640: {
+          width: 640,
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        768: {
+          width: 768,
+          slidesPerView: 2,
+        },
+       }}
       >
         <SwiperSlide>
           <ProductCard data={{ imgSrc: img1 }} />

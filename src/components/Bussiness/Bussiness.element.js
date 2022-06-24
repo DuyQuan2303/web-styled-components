@@ -23,6 +23,7 @@ export const BussinessColumn = styled.div`
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 `;
@@ -53,7 +54,16 @@ export const Image = styled.img`
   height: auto;
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 65px;
+    text-align: center;
+  }
+`;
 
 export const Title = styled.h3`
   color: #000;
@@ -62,10 +72,12 @@ export const Title = styled.h3`
   margin: 0px auto;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   font-size: 35px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const GreenTitle = styled.span`

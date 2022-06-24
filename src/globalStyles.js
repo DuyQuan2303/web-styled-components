@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Noto Sans', sans-serif;
         .mainContainer{
-          overflow-x: hidden;
         }
     }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../../globalStyles";
 import ProductSlider from "./ProductSlider";
-import { ProductHeader, ProductSec, TextWrapper } from "./Product.element";
+import { ProductContainer, ProductHeader, ProductSec, TextWrapper } from "./Product.element";
 
 const Product = () => {
   return (
@@ -33,7 +33,9 @@ const Product = () => {
               </p>
             </TextWrapper>
           </ProductHeader>
-          <ProductSlider/>
+          
+            <ProductSlider />
+          
         </Container>
       </ProductSec>
     </>

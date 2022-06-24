@@ -6,6 +6,8 @@ import Home from "./pages/HomePage/Home";
 import GlobalStyle from "./globalStyles";
 import ScrollButton from "./components/ScrollToTop";
 import BgColor from "./components/Slider/hooks/bgColor";
+import { Navbar } from "./components";
+import { webLogo } from "./pages/HomePage/Data";
 function App() {
   return (
     <>

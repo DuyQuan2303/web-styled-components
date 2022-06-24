@@ -11,6 +11,7 @@ import {
   ProjectSec,
   ProjectTitle,
 } from "./Project.element";
+import ProjectDemo from "./ProjectDemo";
 
 const Project = ({ img1, img2, img3, img4, img5, img6, img7, img8 }) => {
   return (
@@ -22,11 +23,7 @@ const Project = ({ img1, img2, img3, img4, img5, img6, img7, img8 }) => {
         </ProjectHeading>
         <ProjectHolder>
           <ProjectFilter>
-            <ProjectList className="item item-active">All</ProjectList>
-            <ProjectList>Graphic Design</ProjectList>
-            <ProjectList>Web Design</ProjectList>
-            <ProjectList>SEO</ProjectList>
-            <ProjectList>Marketing</ProjectList>
+            <ProjectDemo />
           </ProjectFilter>
         </ProjectHolder>
         <ProjectGrid>

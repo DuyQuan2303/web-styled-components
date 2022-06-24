@@ -22,3 +22,13 @@ export const TextWrapper = styled.div`
   line-height: 28px;
   -webkit-line-clamp: 3;
 `;
+
+export const ProductContainer = styled.div`
+  width: 100%;
+  @media screen and (max-width: 640px) {
+    width: 640px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 768px;
+  }
+`;

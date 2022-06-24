@@ -6,7 +6,6 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   align-items: center;
   font-size: 1.2rem;
   position: fixed;
@@ -63,7 +62,7 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     position: absolute;
     top: 80px;
