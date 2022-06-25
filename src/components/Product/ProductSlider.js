@@ -1,8 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper";
-// import "swiper/css";
-// import "swiper/css/free-mode";
+import  { Autoplay } from 'swiper';
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import {  Pagination,  A11y } from 'swiper';
 
 import img1 from "../../images/Mobile app -01.png";
 import img2 from "../../images/Mobile app -02.png";
@@ -24,11 +23,13 @@ const ProductSlider = () => {
   return (
     <div className="container  justify-content-center">
       <Swiper
-        modules={[ Pagination, A11y]}
+        modules={[Autoplay, Pagination, A11y]}
         spaceBetween={30}
-        // navigation
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
        breakpoints={{
@@ -36,7 +37,6 @@ const ProductSlider = () => {
           width: 640,
           slidesPerView: 1,
         },
-        // when window width is >= 768px
         768: {
           width: 768,
           slidesPerView: 2,
@@ -61,6 +61,9 @@ const ProductSlider = () => {
 
         <SwiperSlide>
           <ProductCard data={{ imgSrc: img5 }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard data={{ imgSrc: img1 }} />
         </SwiperSlide>
       </Swiper>
     </div>

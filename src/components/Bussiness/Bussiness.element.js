@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BussinessSec = styled.div`
   color: #fff;
   padding: 50px 0;
+  overflow: hidden;
 `;
 
 export const BussinessRow = styled.div`
@@ -58,7 +59,8 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 15px;
-  overflow-y: hidden;
+  overflow: hidden;
+  
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
     text-align: center;
@@ -69,15 +71,23 @@ export const Title = styled.h3`
   color: #000;
   max-width: 820px;
   width: 100%;
-  margin: 0px auto;
+  margin: 15px auto;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   font-size: 35px;
+  font-weight: 600;
+  
   @media screen and (max-width: 768px) {
     text-align: center;
+    
   }
+  @media screen and (max-width: 500px){
+    font-size: 24px;
+    text-align: left;
+    margin: 15px 20px;
+    }
 `;
 
 export const GreenTitle = styled.span`
@@ -101,4 +111,14 @@ export const Content = styled.p`
   text-align: justify;
   color: rgb(76, 76, 76);
   margin: 0px;
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 500px){
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 20px;
+  }
 `;

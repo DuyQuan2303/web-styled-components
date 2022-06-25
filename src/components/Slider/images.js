@@ -1,4 +1,4 @@
-export default [
+export default[
     {
       src: require("../../images/l1-min.jpeg"),
       text: "Duis aute irure dolor in reprehenderit in voluptate velit esse",

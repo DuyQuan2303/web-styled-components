@@ -10,7 +10,7 @@ export const ServiceSec = styled.div`
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 100;
   @media screen and (max-width: 768px) {
   }
 `;
@@ -30,8 +30,12 @@ export const ServiceTitle = styled.h3`
   text-align: center;
   margin-bottom: 35px;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 48px;
   text-align: center;
+  @media screen and (max-width: 500px){
+    font-size: 35px;
+      
+    }
 `;
 
 export const ServiceItem = styled.div`

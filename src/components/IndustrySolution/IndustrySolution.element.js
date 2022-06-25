@@ -30,26 +30,32 @@ export const ISColumn = styled.div`
 
 export const TextWrapper = styled.div``;
 export const TitleWrapper = styled.div`
+padding: 10px 0;
   -webkit-line-clamp: 2;
   position: relative;
 `;
 
 export const Title = styled.h1`
   color: #fff;
-  font: 35px "Noto Sans" sans-serif;
+  font-size: 48px ;
+  font-weight: 600;
   @media screen and (max-width: 768px) {
-    text-align: center;
+  text-align: left;
+  font-size: 35px ;
+  margin: 0 20px;
+
   }
 `;
 
 export const Line = styled.span`
   position: absolute;
   width: 100%;
+  margin: 5px 0;
   &::after {
     content: "";
     position: absolute;
-    width: 20%;
-    height: 3px;
+    width: 40%;
+    height: 2px;
     background-color: rgb(102, 201, 4);
     top: 98%;
     left: 0px;
@@ -58,11 +64,11 @@ export const Line = styled.span`
     &::after {
       content: "";
       position: absolute;
-      width: 20%;
-      height: 3px;
+      width: 30%;
+      height: 2px;
       background-color: rgb(102, 201, 4);
       top: 98%;
-      left: 40%;
+      left: 5.5%;
     }
   }
 `;
@@ -76,6 +82,7 @@ export const ContentHolder = styled.div`
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  margin: 10px 0;
 `;
 
 export const Content = styled.p`
@@ -83,8 +90,16 @@ export const Content = styled.p`
   padding-top: 15px;
   text-align: left;
   padding-bottom: 0px !important;
+
   @media screen and (max-width: 768px) {
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    text-align: left;
+    margin: 0 20px;
   }
 `;
 
@@ -98,6 +113,7 @@ export const ItemRow = styled.div`
     padding: 15px 0;
     flex-direction: column;
     flex-wrap: unset;
+    gap: 15px;
   }
 `;
 
@@ -105,6 +121,9 @@ export const ItemColumn = styled.div`
   flex: 0 0 33.333333%;
   max-width: 33.33333%;
   padding: 0 15px;
+  @media screen and (max-width: 500px) {
+    max-width: 100%;
+  }
 `;
 
 export const ItemBox = styled.div`
@@ -150,6 +169,10 @@ export const ItemDesc = styled.div`
   @media screen and (max-width: 768px) {
     -webkit-line-clamp: 2;
   }
+  @media screen and (max-width: 500px) {
+    -webkit-line-clamp: 2;
+    width: 200px;
+  }
 `;
 
 export const Desc = styled.p`
@@ -157,4 +180,5 @@ export const Desc = styled.p`
   align-items: center;
   padding-bottom: 0;
   text-align: center;
+  
 `;

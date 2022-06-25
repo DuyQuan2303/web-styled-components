@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Noto Sans', sans-serif;
         .mainContainer{
+      overflow-x: hidden;
+
         }
     }
 `;
@@ -26,6 +28,11 @@ export const Container = styled.div`
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media screen and (max-width: 768px) {
+   padding: 0;
+
+  }
 `;
 
 export const Button = styled.button`
@@ -41,6 +48,7 @@ export const Button = styled.button`
   color: rgb(34, 45, 56);
   border: 1px solid;
   z-index: 1;
+  margin: 10px 0;
   padding: 9px 34px !important;
   cursor: pointer;
   opacity: ${({ opacity }) => (opacity ? "1" : "0")};
@@ -85,7 +93,7 @@ export const SButton = styled.div`
   color: #0056b3;
   @media screen and (max-width: 768px) {
     left: 80%;
-    bottom: 40px;
+    bottom: 68px;
   }
 `;
 

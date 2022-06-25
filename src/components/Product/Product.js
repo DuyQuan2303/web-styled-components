@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../../globalStyles";
 import ProductSlider from "./ProductSlider";
-import { ProductContainer, ProductHeader, ProductSec, TextWrapper } from "./Product.element";
+import { ProductHeader, ProductSec, ProductTitle, TextWrapper } from "./Product.element";
 
 const Product = () => {
   return (
@@ -10,19 +10,10 @@ const Product = () => {
         <Container>
           <ProductHeader>
             <div>
-              <h2
-                style={{
-                  fontSize: "35px",
-                  color: "rgb(0, 0, 0)",
-                  marginBottom: "1.5rem",
-                  fontWeight: "600",
-                }}
-              >
-                Product
-              </h2>
+            <ProductTitle>Product</ProductTitle>
             </div>
             <TextWrapper>
-              <p style={{ fontSize: "16px", color: "rgb(76,76,76)" }}>
+              <p style={{ fontSize: "18px", color: "rgb(76,76,76)" }}>
                 We offer a wide range of solutions from native iOS and Android
                 applications based on Swift, Objective-C, Kotlin and Java, to
                 web apps based on Node.js, React and Ruby on Rails along with

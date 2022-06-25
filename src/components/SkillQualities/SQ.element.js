@@ -3,10 +3,19 @@ import styled from "styled-components";
 export const SQSec = styled.div`
   color: #000;
   padding: 60px 0;
+  @media screen and (max-width: 768px){
+    margin: 0 16px;
+  }
 `;
 export const SQTitle = styled.h1`
-  font-size: 30px;
-  text-align: center;
+  margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    @media screen and (max-width: 500px){
+    font-size: 35px;
+      
+    }
 `;
 export const SQRow = styled.div`
   display: flex;

@@ -3,13 +3,13 @@ import { Container } from "../../globalStyles";
 import { Link } from "react-router-dom";
 export const Nav = styled.nav`
   background: ${props => props.bg};
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: fixed;
-  top: 0;
+  top: -10px;
   left: 0;
   z-index: 999;
   width: 100%;
@@ -35,8 +35,13 @@ export const NavLogo = styled(Link)`
 export const NavIcon = styled.img`
   margin-right: 0.5rem;
   width: 110px;
-  height: 50px
-  ;
+  height: 50px;
+  @media screen and (max-width: 500px){
+    padding-left: 16px;
+  }
+  @media screen and (max-width: 768px){
+    padding-left: 16px;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -51,6 +56,12 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
+  @media screen and (max-width: 500px){
+    padding-left: 16px;
+  }
+  @media screen and (max-width: 768px){
+    padding-left: 16px;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -58,12 +69,13 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  padding-top: 1rem;
 
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
     left: ${({ click }) => (click ? 0 : "-100%")};
@@ -109,7 +121,6 @@ export const NavLinks = styled(Link)`
   height: 100%;
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem;
     width: 100%;
     display: table;
     &:hover {

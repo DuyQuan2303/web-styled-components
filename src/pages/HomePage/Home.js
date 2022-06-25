@@ -1,9 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import {
-  homeObjTwo,
   homeObjThree,
-  homeObjFour,
   homeObjFive,
   homeObjSix,
   homeObjSeven,
@@ -34,7 +31,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WOW from "wowjs";
 import IndustrySolution from "../../components/IndustrySolution/IndustrySolution";
 import Bussiness from "../../components/Bussiness/Bussiness";
-import ProjectDemo from "../../components/ProjectSession/ProjectDemo";
 class Home extends React.Component {
   componentDidMount() {
     new WOW.WOW({
@@ -70,7 +66,3 @@ class Home extends React.Component {
 
 export default Home;
 
-const HomeWrapper = styled.div`
-  width: 100vw;
-  overflow: hidden;
-`;

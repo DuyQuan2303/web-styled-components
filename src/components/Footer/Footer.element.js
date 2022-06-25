@@ -3,13 +3,16 @@ import styled from "styled-components";
 export const FooterSec = styled.div`
   background: rgb(249, 249, 249);
   padding: 60px 0px;
+  
 `;
 
 export const FooterRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+
+  /* @media screen and (max-width: 500px){
+    margin: 0 16px;
+    } */
 `;
 
 export const FooterColumn = styled.div`
@@ -26,6 +29,7 @@ export const FooterColumn = styled.div`
     display: flex;
     justify-content: center;
   }
+
 `;
 
 export const SocialSec = styled.footer`
@@ -44,13 +48,16 @@ export const SocialList = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   padding: 15px 0px;
+  @media screen {
+    
+  }
 `;
 
 export const SocialFilter = styled.li`
   list-style: none;
   margin: 0 1rem;
-  @media screen and (max-width: 768px){
-    width: 20%;
+  @media screen and (max-width: 600px){
+    width: 15%;
   }
 `;
 export const SocialItems = styled.a`
@@ -71,3 +78,5 @@ export const SocialItems = styled.a`
     border: 1px solid rgb(66, 103, 178) !important;
   }
 `;
+
+

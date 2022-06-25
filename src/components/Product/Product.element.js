@@ -21,6 +21,10 @@ export const TextWrapper = styled.div`
   text-overflow: ellipsis;
   line-height: 28px;
   -webkit-line-clamp: 3;
+  @media screen and (max-width: 640px) {
+    padding: 0 16px;
+    text-align: justify;
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -30,5 +34,15 @@ export const ProductContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 768px;
+  }
+`;
+
+export const ProductTitle = styled.h3`
+  color: #1c2237;
+  font-size: 48px;
+  font-weight: 600;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 35px;
   }
 `;

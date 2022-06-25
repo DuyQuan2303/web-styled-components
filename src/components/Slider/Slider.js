@@ -14,16 +14,16 @@ const Slider = ({ images, opacity }) => {
 
   return (
     <SliderSec className="slider" ref={slideImage}>
-      <SliderContent className="slider--content">
-        <SliderButton onClick={goToPreviousSlide} className="slider__btn-left">
+      <SliderContent className="slider--content ">
+        <SliderButton onClick={goToPreviousSlide} className="slider__btn-left wow slideInLeft">
           <AiOutlineLeft/>
         </SliderButton>
         <SliderFeature className="slider--feature">
-          <FeatureTitle className="feature--title">BUSSINESS AGENCY</FeatureTitle>
-          <FeatureText ref={slideText} className="feature--text"></FeatureText>
-          <Button className="feature__btn" opacity={opacity}>Get started</Button>
+          <FeatureTitle className="feature--title wow fadeInUp">BUSSINESS AGENCY</FeatureTitle>
+          <FeatureText ref={slideText} className="feature--text wow fadeInUp"></FeatureText>
+          <Button className="feature__btn wow fadeInUp" opacity={opacity}>Get started</Button>
         </SliderFeature>
-        <SliderButton onClick={goToNextSlide} className="slider__btn-right">
+        <SliderButton onClick={goToNextSlide} className="slider__btn-right wow slideInRight">
           <AiOutlineRight/>
         </SliderButton>
       </SliderContent>

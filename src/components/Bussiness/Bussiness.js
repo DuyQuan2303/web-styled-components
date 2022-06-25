@@ -58,8 +58,9 @@ const Bussiness = ({opacity,buttonLabel}) => {
                     partner.
                   </Content>
                 </ContentHolder>
-              </TextWrapper>
               <Button opacity={opacity} >{buttonLabel}</Button>
+
+              </TextWrapper>
             </BussinessColumn>
           </BussinessRow>
         </Container>
